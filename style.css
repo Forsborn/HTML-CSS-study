@@ -1,0 +1,480 @@
+/* Разметка */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center{
+    padding: 0 calc(50% - 570px);
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Шапка */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+}
+
+.header__left,
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__form {
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+}
+
+.header__basket {
+    margin-right: 26px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+    font-weight: 300;
+    color: #222222;
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.pink__span__logo {
+    font-size: 27px;
+    font-weight: 900;
+    color: #f16d7f;
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.logo__img {
+    margin-right: 13px;
+}
+
+.button {
+    font-size: 15px;
+    color: #ffffff;
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 38px;
+    background-color: #f16d7f;
+    padding: 0 16px;
+}
+
+.button:hover {
+    background-color: #ec8795;
+}
+
+.placehold__main {
+    top: 32px;
+    left: 515px;
+    height: 38px;
+    width: 279px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #a4a4a4;
+    text-align: left;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+}
+
+.submit-but {
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 0px 3px 3px 0px;
+    padding: 10.5px;
+}
+
+.submit-but:hover {
+    background-color: #e6e6e6;
+}
+/* Меню навигации */
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__link {
+    padding: 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #222222;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.menu__link:hover {
+    color: #a4a4a4;
+}
+/* Промой блок */
+.promo {
+    background-color: #e8e8e8;
+}
+
+.promo__box {
+    height: 614px;
+    background-image: url(img/promo/promo-main.png);
+    background-repeat: no-repeat;
+    background-position: center -51px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.promo__content {
+    margin-top: 224px;
+    border-left: 12px solid #f16d7f;
+    padding-left: 12px;
+}
+
+.promo__h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #222222;
+    letter-spacing: 0.03em;
+    line-height: 45px;
+    margin-bottom: 12px;
+}
+
+.promo__h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #222222;
+    letter-spacing: 0.03em;
+    line-height: 34px;
+}
+
+.pink__span {
+    font-size: 40px;
+    font-weight: 900;
+    color: #f16d7f;
+    text-align: right;
+    letter-spacing: 0.03em;
+}
+/* Промо контент */
+.promo-product {
+    display: flex;
+    flex-flow: wrap column;
+    height: 923px;
+    padding-top: 98px;
+}
+
+.promo__block {
+    margin-right: 21px;
+    margin-bottom: 20px;
+}
+
+.promo__text {
+    position: absolute;
+    height: 82px;
+    width: 175px;
+    background-color: #ffffff;
+    margin-top: 26px;
+}
+
+.span_promo {
+    font-size: 30px;
+    font-weight: 900;
+    color: #f16d7f;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.promo_h2 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #222222;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 14px;
+}
+
+.promo__position {
+    padding-left: 19px;
+}
+
+.uniq-1 {
+    height: 82px;
+    width: 225px;
+}
+
+.uniq-2 {
+    height: 82px;
+    width: 162px
+}
+
+.uniq-3 {
+    height: 82px;
+    width: 180px;
+}
+/* Блок Fetured Items */
+.fetured-block {
+
+}
+.fet-beg {
+    font-size: 30px;
+    font-weight: bold;
+    color: #222222;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.fet-low-beg {
+    font-size: 14px;
+    color: #9f9f9f;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 16px;
+}
+
+.items-fet {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.items-fet-block {
+    display: table-footer-group;
+    margin-top: 40px;
+    position: relative;
+}
+
+.lil {
+    font-size: 13px;
+    color: #222222;
+    text-transform: uppercase;
+    padding-left: 14px;
+    padding-top: 19px;
+}
+
+.low-lil {
+    padding-top: 175px;
+    margin-top: 2px;
+}
+
+.price__pink {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f16d7f;
+    text-transform: uppercase;
+    padding-left: 13px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+}
+
+.fet-butt {
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   margin-top: 59px;
+}
+
+.items-fet-block:hover{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 8px 0px #000000;
+}
+.items-fet-block:hover .invis {
+    opacity: 1;
+}
+.items-fet-block:hover .invis-1 {
+    opacity: 1;
+}
+.invis{
+    opacity: 0;
+    position: absolute;
+
+}
+
+.fix {
+    position: absolute;
+    width: 261px;
+    height: 280px;
+}
+
+.alertCart {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 261px;
+    height: 280px;
+    border: 1px solid #ffffff;
+    padding: 15px 13px;
+    justify-content: center;
+}
+.invis-1 {
+    opacity: 0;
+    position: relative;
+    margin-left: 65px;
+    margin-top: -183px;
+}
+
+.fet-span {
+    padding-left: 8px;
+}
+
+.img__align {
+    vertical-align: sub;
+}
+
+/* ТЕСТ ДРОПДАУН */
+/* Dropdown Button */
+.dropbtn {
+    background-color: #e6e6e6;
+    color: black;
+    padding: 12.5px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #f1f1f1;}
+
+.main_offer {
+    display: flex;
+    padding-top: 113px;
+    height: 529px;
+}
+
+.women__left {
+    background-image: url(img/promo/womenSell.png);
+    background-repeat: no-repeat;
+
+}
+
+.women__left__content {
+    position: absolute;
+    padding-left: 39px;
+    padding-top: 146px;
+}
+
+.women__h1 {
+    font-size: 54px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+}
+
+.women__pink_span {
+    font-size: 54px;
+    font-weight: bold;
+    color: #f16d7f;
+    letter-spacing: 0.03em;
+}
+
+.women__right__content {
+    padding-top: 48px;
+    padding-left: 36px;
+}
+
+.women__h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+}
+
+.women__right {
+    height: 529px;
+    width: 373px;
+    background-color: #222224;
+}
+
+.women__right__img {
+    float: left;
+}
+
+.women__text__con {
+    margin-left: 78px;
+}
+
+.women__text__con h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fbfbfb;
+    letter-spacing: 0.03em;
+}
+
+.women__text__con p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fbfbfb;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    width: 230px;
+    padding-top: 17px;
+}
+/* Футор-слайдер */
+.footor-slide {
+    background-image: url(img/footor/sliderBG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 97px;
+    height: 438px;
+    display: flex;
+}
+.footor__line_slider {
+    height: 438px;
+    width: 1px;
+    background-color: #e3e3e3;
+}
+
+.footor__block__slider {
+    height: 438px;
+    width: 569px;
+}
