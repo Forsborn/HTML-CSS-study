@@ -13,22 +13,83 @@
         <div class="header__left">
             <a href="index.html" class="logo"><img src="img/logo.png" alt="logo" class="logo__img">BRAN<span  class="pink__span__logo">D</span></a>
             <form action="#" class="header__form">
-                <div class="dropdown">
-                    <button class="dropbtn">Browse</button>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
+                <details class="header__left__dd">
+                    <summary>Browse</summary>
+                    <div class="header__left__div">
+                        <h3>Women</h3>
+                        <ul>
+                            <li><a href="#" class="drop__a">Dresses</a></li>
+                            <li><a href="#" class="drop__a">Tops</a></li>
+                            <li><a href="#" class="drop__a">Sweaters/Knits</a></li>
+                            <li><a href="#" class="drop__a">Jackets/Coats</a></li>
+                            <li><a href="#" class="drop__a">Blazers</a></li>
+                            <li><a href="#" class="drop__a">Denim</a></li>
+                            <li><a href="#" class="drop__a">Leggings/Pants</a></li>
+                            <li><a href="#" class="drop__a">Skirts/Shorts </a></li>
+                            <li><a href="#" class="drop__a">Accessories</a></li>
+                            <h3>Men</h3>
+                            <li><a href="#" class="drop__a">Dresses</a></li>
+                            <li><a href="#" class="drop__a">Tops</a></li>
+                            <li><a href="#" class="drop__a">Sweaters/Knits</a></li>
+                            <li><a href="#" class="drop__a">Jackets/Coats</a></li>
+                            <li><a href="#" class="drop__a">Blazers</a></li>
+                            <li><a href="#" class="drop__a">Denim</a></li>
+                        </ul>
                     </div>
-                </div>
+                </details>
                 <input type="text" placeholder="Search for Item..." class="placehold__main">
                 <button type="submit" class="submit-but"><img src="img/search.png" alt="search"></button>
             </form>
         </div>
         <div class="header__right">
-            <a href="#" class="header__basket__a">
-                <img src="img/basket.png" alt="basket" class="header__basket">
-            </a>
+            <details class="">
+                <summary>
+                    <a href="#" class="header__basket__a">
+                        <img src="img/basket.png" alt="basket" class="header__basket">
+                    </a>
+                </summary>
+                <div class="header__right__div">
+                    <div class="basket__product">
+                        <div class="img__box"><a href="#" class="img__box__link" ></a></div>
+                        <div class="text__box">
+                            <p class="basket__text">Rebox Zane</p>
+                            <img src="img/low-star.png" alt="">
+                            <div class="basket__text">
+                                <span class="basket__cost">1</span>
+                                <span class="basket__x">x</span>
+                                <span class="basket__cost">$250</span>
+                            </div>
+                        </div>
+                        <div class="basket__close">
+                            <a href="#"><i class="fas fa-times-circle basket__close"></i></a>
+                        </div>
+                    </div>
+                    <div class="basket__product">
+                        <div class="img__box1"><a href="#" class="img__box__link" ></a></div>
+                        <div class="text__box">
+                            <p class="basket__text">Rebox Zane</p>
+                            <img src="img/low-star.png" alt="">
+                            <div class="basket__text">
+                                <span class="basket__cost">1</span>
+                                <span class="basket__x">x</span>
+                                <span class="basket__cost">$250</span>
+                            </div>
+                        </div>
+                        <div class="basket__close">
+                            <a href="#"><i class="fas fa-times-circle basket__close"></i></a>
+                        </div>
+                    </div>
+                    <div class="basket__total">
+                        <p>TOTAL</p>
+                        <p>$500.00</p>
+                    </div>
+                    <div class="basket__check-cart">
+                        <a href="#" class="basket__checkout">Checkout</a>
+                    </div>
+                    <div class="basket__check-cart">
+                        <a href="#" class="basket__cart">Go to cart</a>
+                    </div>
+            </details>
             <a href="" class="button">My Account</a>
         </div>
     </header>
@@ -253,7 +314,7 @@
         </div>
     </div>
     <div class="fet-butt center">
-        <a href="" class="button">Browse All Product &rarr;</a>
+        <a href="" class="button but-down">Browse All Product &rarr;</a>
     </div>
     <div class="main_offer center">
         <div class="women__left">
