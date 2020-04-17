@@ -1798,11 +1798,11 @@ footer {
 }
 
 .cart_product__menu__left__ulprod__li__div__mar {
-  margin-top: 20px;
+  margin-top: 11px;
 }
 
 .cart_product__menu__left__ulprod__li__div div h3 {
-  margin-top: 13px;
+  margin-top: 11px;
 }
 
 .cart_product__menu__left__ulprod__li__div div {
@@ -2167,12 +2167,104 @@ input[type="number"]::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 537px;
+  margin-top: 63px;
 }
 
-.open-block__select-room__block {
+.open-block__select-room__block h5 {
   font-size: 14px;
   font-weight: bold;
   color: #2f2f2f;
   line-height: 24px;
+}
+
+.open-block__choise {
+  height: 35px;
+  width: 114px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  outline: none;
+  padding: 0 15px;
+  font-size: 13px;
+  color: #bcbcbc;
+  line-height: 24px;
+}
+
+.open-block__button {
+  background-color: #ffffff;
+  border: 1px solid #ef5b70;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ef5b70;
+  padding: 16px 203px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 26px;
+}
+
+.open-block__button__img {
+  margin-right: 15px;
+}
+
+.open-block__choise::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+
+.open-block__button:hover {
+  background-color: #f3c2ca;
+  border: 1px solid #f3c2ca;
+}
+
+.like-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 72px;
+}
+
+.like-block__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 119px;
+}
+
+.like-block__text h2 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #4d4d4d;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.shadow-text h5 {
+  font-size: 14px;
+  color: #6f6e6e;
+  text-transform: uppercase;
+}
+
+.fix-margin {
+  margin-bottom: 0;
+}
+
+.visability {
+  margin-top: 11px;
+  visibility: hidden;
+}
+
+.cart_product__menu:hover .visability {
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */
