@@ -1,5 +1,6 @@
 $color-blue: #008DCD;
 $color-white: #ffffff;
+$color-yellow: #FFCC00;
 
 * {
     margin: 0;
@@ -62,7 +63,7 @@ a {
     background-color: $color-blue;
     border: 1px solid $color-blue;
     font-weight: 700;
-    padding: 14px 36px;
+    padding: 14px 51px;
     outline: none;
     & a {
         color: #ffffff;
@@ -77,6 +78,17 @@ a {
     }
 }
 
+.info-stage {
+    background-color: #F7F7F7;
+}
+
+.parcel-block {
+    background-color: #F7F7F7;
+}
+
+.call {
+    background-color: $color-blue;
+}
 
 @media (max-width: 320px) {
     html {
@@ -181,6 +193,121 @@ a {
             outline: none;
         }
     }
+    .info-stage {
+        padding: 0 6.1px;
+        margin-top: 17px;
+        min-height: 375px;
+        &__box {
+            &__mobile-img {
+                padding-top: 17px;
+            }
+            &__desktop-table {
+                display: none;
+            }
+        }
+        &__info-block {
+            margin-top: 25.5px;
+            & h1 {
+                display: none;
+            }
+            & h2 {
+                font-size: 18px;
+                line-height: 22px;
+                display: flex;
+                align-items: center;
+            }
+            &__box {
+                & p {
+                    font-size: 0.6666rem;
+                    line-height: 14px;
+                    margin-top: 10.5px;
+                    margin-bottom: 17px;
+                }
+            }
+        }
+    }
+    .mobile-version {
+        padding: 14px 45px;
+        margin-bottom: 17px;
+    }
+    .instruction {
+        &__box {
+            display: flex;
+            flex-flow: wrap;
+        }
+        &__step {
+            margin-top: 27px;
+            & h3 {
+                font-size: 26px;
+                line-height: 31px;
+                margin-top: 27px;
+            }
+            & p {
+                font-size: 14px;
+                line-height: 17px;
+                margin-top: 7px;
+                margin-bottom: 27px;
+            }
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+    .parcel-block {
+        min-height: 161px;
+        &__position {
+            padding-top: 23px;
+            padding-bottom: 4px;
+        }
+        & h1 {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+    .call {
+        &__box {
+            min-height: 283px;
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+            & h1 {
+                font-size: 28px;
+                line-height: 34px;
+                color: $color-white;
+                text-transform: uppercase;
+            }
+            & p {
+                font-size: 14px;
+                line-height: 13px;
+                color: $color-white;
+            }
+        }
+    }
+    .call-input {
+        background-color: $color-blue;
+        color: $color-white;
+        border-color: $color-white;
+        width: 100%;
+        text-align: start;
+        font-weight: normal;
+        text-transform: none;
+        &::-webkit-input-placeholder {
+            color: $color-white;
+        }
+    }
+    .call-button {
+        background-color: $color-yellow;
+        border-color: $color-yellow;
+        color: #363636;
+        width: 100%;
+    }
+    .checkbox-call {
+        font-size: 10px;
+        line-height: 12px;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+    }
 
 }
 
@@ -200,6 +327,8 @@ a {
         min-height: 415px;
         min-width: 100%;
         &__content {
+            width: calc(60%);
+            margin-left: 15px;
             & h1 {
                 font-size: 3.142rem;
                 color: $color-white;
@@ -234,6 +363,172 @@ a {
             color: #ffffff;
         }
     }
+    .info-stage {
+        padding: 0 15px;
+        min-height: 320px;
+        margin-top: -2px;
+        padding-top: 25px;
+        &__box {
+            &__mobile-img {
+                display: none;
+            }
+            &__desktop-table {
+                background-image: url(img/groupTable.png);
+                width: 398px;
+                height: 202.62px;
+            }
+        }
+        &__info-block {
+            & h1 {
+                display: none;
+            }
+            & h2 {
+                font-size: 36px;
+                line-height: 43px;
+                display: flex;
+                align-items: center;
+            }
+            &__box {
+                width: calc(40%);
+                & p {
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-top: 10.5px;
+                    margin-bottom: 17px;
+                }
+            }
+        }
+        &__left-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+    }
+    .mobile-version {
+        padding: 14px 45px;
+        margin-bottom: 17px;
+    }
+    .button-blue__mobile-fix {
+        margin: 0 0;
+    }
+    .instruction {
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__flex {
+            display: flex;
+            margin-left: 59px;
+            margin-right: 38px;
+            margin-top: 11px;
+        }
+        &__step {
+            margin-top: 27px;
+            width: 100%;
+            & h3 {
+                font-size: 26px;
+                line-height: 31px;
+                margin-top: 27px;
+            }
+            & p {
+                font-size: 16px;
+                line-height: 19px;
+                margin-top: 7px;
+                margin-bottom: 27px;
+            }
+        }
+        &__step:first-child {
+            margin-right: 40px;
+        }
+        &__step:last-child {
+            margin-left: 40px;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+    .parcel-block {
+        &__position {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 19px;
+            min-height: 124px;
+        }
+        & h1 {
+            font-size: 28px;
+            line-height: 34px;
+            width: 45%;
+        }
+    }
+    .call {
+        &__box {
+            min-height: 171px;
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+            &__position {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 4px;
+            }
+            &__content,
+            &__form {
+                width: 40%;
+            }
+            &__content {
+                & h1 {
+                    font-size: 28px;
+                    line-height: 34px;
+                    color: $color-white;
+                    text-transform: uppercase;
+                    margin-bottom: 11px;
+                }
+                & p {
+                    font-size: 14px;
+                    line-height: 13px;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    .call-input {
+        background-color: $color-blue;
+        color: $color-white;
+        border-color: $color-white;
+        width: 100%;
+        text-align: start;
+        padding: 14px 17px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: none;
+        margin-bottom: 8.5px;
+        &::-webkit-input-placeholder {
+            color: $color-white;
+        }
+    }
+    .call-button {
+        background-color: $color-yellow;
+        border-color: $color-yellow;
+        color: #363636;
+        width: 100%;
+        margin-bottom: 8.5px;
+        &:hover {
+            background: #FFCC00;
+            box-shadow: 0px 4px 20px rgba(255, 204, 0, 0.55);
+        }
+    }
+    .checkbox-call {
+        font-size: 10px;
+        line-height: 12px;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+    }
+
 }
   
 @media (min-width: 991.98px) {
@@ -298,5 +593,180 @@ a {
             color: #ffffff;
             font-size: 1rem;
         }
+    }
+    .info-stage {
+        min-height: 457px;
+        padding-top: 61px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__box {
+            &__mobile-img {
+                display: none;
+            }
+            &__desktop-table {
+                background-image: url(img/groupDesktop.png);
+                width: 660px;
+                height: 336px;
+            }
+        }
+        &__info-block {
+            & h1 {
+                font-size: 36px;
+                line-height: 43px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 22px;
+            }
+            & h2 {
+                font-size: 36px;
+                line-height: 43px;
+                display: flex;
+                align-items: center;
+                display: none;
+            }
+            &__box {
+                width: calc(35%);
+                & p {
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-top: 10.5px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        &__left-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+    }
+    .mobile-version {
+        padding: 14px 70px;
+        margin-bottom: 17px;
+    }
+    .instruction {
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__flex {
+            display: flex;
+            margin-top: 41px;
+        }
+        &__step {
+            margin-top: 27px;
+            width: 100%;
+            & h3 {
+                font-size: 30px;
+                line-height: 36px;
+                margin-top: 27px;
+            }
+            & p {
+                font-size: 20px;
+                line-height: 24px;
+                margin-top: 7px;
+                margin-bottom: 27px;
+            }
+        }
+        &__step:first-child {
+            margin-right: 69px;
+        }
+        &__step:last-child {
+            margin-left: 69px;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+    .button-blue__mobile-fix {
+        margin: 0 0;
+    }
+    .parcel-block {
+        &__position {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 180px;
+        }
+        & h1 {
+            font-size: 36px;
+            line-height: 43px;
+            width: 60%;
+        }
+    }
+    .call {
+        &__box {
+            min-height: 240px;
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+            &__position {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+            &__content {
+                width: 100%;
+                padding-bottom: 40px;
+            }
+            &__form {
+                width: 32.5%;
+            }
+            &__content {
+                & h1 {
+                    font-size: 48px;
+                    line-height: 58px;
+                    color: $color-white;
+                    text-transform: uppercase;
+                    margin-bottom: 11px;
+                }
+                & p {
+                    font-size: 24px;
+                    line-height: 23px;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    .call-input {
+        background-color: $color-blue;
+        color: $color-white;
+        border-color: $color-white;
+        width: 100%;
+        text-align: start;
+        padding: 14px 17px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: none;
+        margin-bottom: 8.5px;
+        &::-webkit-input-placeholder {
+            color: $color-white;
+        }
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        }
+    }
+    .call-button {
+        background-color: $color-yellow;
+        border-color: $color-yellow;
+        color: #363636;
+        width: 100%;
+        margin-bottom: 8.5px;
+        &:hover {
+            background: #FFCC00;
+            box-shadow: 0px 4px 20px rgba(255, 204, 0, 0.55);
+        }
+    }
+    .checkbox-call {
+        font-size: 10px;
+        line-height: 12px;
+        color: $color-white;
+        display: flex;
+        align-items: center;
     }
 }
